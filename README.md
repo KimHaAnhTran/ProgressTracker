@@ -22,9 +22,7 @@ This project is built using a modern web development stack:
 - **Interactive Task Cards**: Add, edit, and delete tasks with intuitive controls
 - **Visual Progress Tracking**: Drag and drop tasks between columns with smooth animations
 - **Completion Status**: Tasks in the "Done" column are automatically marked with visual indicators (crossed-out text, reduced opacity)
-- **Persistent Data**: All changes are automatically saved and persist between sessions
-- **Responsive Design**: Clean interface that works across different screen sizes
-- **Welcome Page**: Introductory page explaining application features and functionality
+- **Persistent Data**: All changes are saved even if the program is closed
 
 ## Prerequisites
 Before running the application, ensure you have the following installed:
