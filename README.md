@@ -12,9 +12,9 @@ This project is built using a modern web development stack:
 
 - **Backend**: Python with Flask web framework
 - **Frontend**: Vanilla JavaScript with HTML5 and CSS3
-- **Data Storage**: JSON file-based persistence
+- **Data Storage**: JSON file to store and update data
 - **Drag & Drop**: Sortable.js library for smooth interactions
-- **Styling**: Custom CSS with responsive design principles
+- **Styling**: CSS 
 
 ## Key Features
 
