@@ -62,9 +62,6 @@ def load_data():
             pass
             
     # Default board structure with three columns
-    # Lowkey need to implement when user deletes "Done" column and makes it again but this time it doesn't cross off words
-    # So now it needs to cross off words whenever a column is titled "Done" You get me? But like, there's also "Finished" and yaddah yaddah
-    # A bit messy. If like, then implement. Otherwise, too lazy
     return {
         "columns": [
             {"id": 1, "title": "To Do", "tasks": []},
@@ -117,14 +114,17 @@ def create_task():
     for column in board_data['columns']:
         if column['id'] == column_id:
             column['tasks'].append(new_task)
+            if column['title'] == 'Done':
+                new_task['status'] = 'done' # Make it cross out the moment it's appended to "Done" column
             break
+        
 
     # 6. Save the updated board and return the new task
     save_data(board_data)
     return jsonify(new_task), 201  # 201 status code means "Created"
 
-# API: Move a task (IMPORTANT UTMOST IMPORTANT!!)
-# Literally moves tasks between columns
+# API: Move a task (IMPORTANT!)
+# Moves tasks between columns
 @app.route('/api/task/<int:task_id>/move', methods=['POST'])
 def move_task(task_id):
     # 1. Get new column ID from request
@@ -140,9 +140,8 @@ def move_task(task_id):
     old_column_id = None
     
     # Search through all columns and all tasks
-    # I love overexplaining code. Hooray!
-    # So like, in the JSON file, it's arranged in a way that's columns -> tasks
-    # Go through all columns and compare column name, then compare task id, then move it move it
+    # In the JSON file, it's arranged in a way that's columns -> tasks
+    # Go through all columns and compare column name, then compare task id, then move it 
     for column in board_data['columns']:
         for task in column['tasks']:
             if task['id'] == task_id:
@@ -157,8 +156,9 @@ def move_task(task_id):
     # 4. If task found, add it to the new column
     if task_to_move:
         for column in board_data['columns']:
-            if column['id'] == new_column_id or column['title'] == 'Done': # Literally on a race to find the synonyms of "Done." Smh in this house only DONE is accepted or DONE you shall be
-                # --- CORE LOGIC: Check if new column is "Done" (ID 3) ---
+            if column['id'] == new_column_id or column['title'] == 'Done': 
+                # Check if new column is "Done" (ID 3) or its name is "Done"
+                # So that it's a cross-out effect
                 if new_column_id == 3:
                     task_to_move['status'] = 'done'  # Mark as done
                 else:

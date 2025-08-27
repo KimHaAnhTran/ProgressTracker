@@ -10,13 +10,13 @@
                     "status": "active"
                 },
                 {
-                    "id": 106,
-                    "text": "Everything else",
+                    "id": 107,
+                    "text": "Rewrite documentation",
                     "status": "active"
                 },
                 {
-                    "id": 107,
-                    "text": "Sanitize the code so it doesn't contain swear words or high school-written documentation",
+                    "id": 108,
+                    "text": "Fix the href of the welcome.html",
                     "status": "active"
                 }
             ]
@@ -26,8 +26,8 @@
             "title": "Doing",
             "tasks": [
                 {
-                    "id": 104,
-                    "text": "Staying up late",
+                    "id": 106,
+                    "text": "Chilling",
                     "status": "active"
                 }
             ]
@@ -37,8 +37,8 @@
             "title": "Done",
             "tasks": [
                 {
-                    "id": 105,
-                    "text": "Letting Javascript take a big ol bite of my fucking ass",
+                    "id": 104,
+                    "text": "Staying up late",
                     "status": "done"
                 }
             ]
