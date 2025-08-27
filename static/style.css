@@ -1,0 +1,218 @@
+
+/*Regular prettifying stuff*/
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+}
+
+#board {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    overflow-x: auto;
+    min-height: 80vh;
+}
+
+/* Board Header */
+.board-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.board-header h2 {
+    margin: 0;
+    color: #333;
+}
+
+.header-controls {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.add-column-btn {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.add-column-btn:hover {
+    background: #357abD;
+}
+
+.home-link {
+    color: #666;
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.home-link:hover {
+    background: #f5f5f5;
+}
+
+/* Column header with delete button */
+.column-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+}
+
+.column-title {
+    font-weight: bold;
+    margin: 0;
+}
+
+.delete-column-btn {
+    background: none;
+    border: none;
+    color: #999;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+.delete-column-btn:hover {
+    color: #ff4757;
+    background: #fff2f0;
+}
+
+/*Make pretty the columns*/
+
+.column {
+    background-color: #ebecf0;
+    border-radius: 8px;
+    padding: 12px;
+    min-width: 250px;
+    max-width: 300px;
+    align-self: flex-start;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.column-title {
+    font-weight: bold;
+    margin: 0 0 12px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #ccc;
+}
+
+/*Make pretty the tasks*/
+.tasks {
+    min-height: 40px;
+}
+
+.task {
+    background-color: white;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    cursor: grab;
+    transition: transform 0.2s ease;
+}
+
+.task:hover {
+    transform: translateY(-2px);
+}
+
+.task.done {
+    opacity: 0.7;
+    text-decoration: line-through;
+}
+
+/*Make pretty the task buttons*/
+.add-task-btn {
+    background: none;
+    border: none;
+    color: #5e6c84;
+    padding: 8px;
+    border-radius: 4px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.add-task-btn:hover {
+    background-color: #ddd;
+}
+
+/* Visual hint when dragging */
+.sortable-ghost {
+    opacity: 0.4; /*Spooky ghostly oOooOoo. Just decrease of opacity*/
+}
+
+.sortable-chosen {
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Task action buttons */
+.task-actions {
+    display: none; /* Hidden by default */
+    justify-content: flex-end;
+    gap: 5px;
+    margin-top: 8px;
+}
+
+.task:hover .task-actions {
+    display: flex; /* Show on hover */
+    /*The pencil and trash buttons*/
+}
+
+.edit-btn, .delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.edit-btn:hover {
+    background-color: #e6f7ff;
+}
+
+.delete-btn:hover {
+    background-color: #fff2f0;
+}
+
+/* Editing state */
+.task.editing .task-text {
+    display: none;
+}
+
+.task.editing .edit-input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.edit-input {
+    display: none;
+}

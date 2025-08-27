@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <!-- Here be Sortable.js for drag-and-drop -->
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Progress Tracker</h1>
+    </header>
+
+    <div class="board-header">
+        <h2> </h2>
+        <div class="header-controls">
+            <button id="add-column-btn" class="add-column-btn">+ Add Column</button>
+            <a href="/welcome" class="home-link">← Home</a>
+        </div>
+    </div>
+
+    <main>
+        <div id="board">
+            <!-- Columns will be inserted here by ye olde JS -->
+        </div>
+    </main>
+
+    <!-- Template for Column -->
+    <template id="column-template">
+        <div class="column">
+            <h3 class="column-title"></h3>
+            <div class="tasks"></div>
+            <button class="add-task-btn">+ Add Task</button>
+        </div>
+    </template>
+
+    <!-- Template for Task -->
+    <template id="task-template">
+        <div class="task">
+            <p class="task-text"></p>
+            <div class="task-actions">
+                <button class="edit-btn" title="Edit">✏️</button>
+                <button class="delete-btn" title="Delete">🗑️</button>
+            </div>
+        </div>
+    </template>
+
+    <!-- The JS code that'll do ye olde crunching -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
