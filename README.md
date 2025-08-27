@@ -6,6 +6,14 @@ A full-stack Kanban board application for task management and progress tracking,
 
 **Progress Tracker** is a web-based Kanban-style task management system that allows users to organize their work into customizable columns. Users can create tasks, drag and drop them between columns to track progress, and visually distinguish completed tasks. The application features a clean, intuitive interface with real-time updates and persistent data storage.
 
+## How It Works
+
+The application uses a client-server architecture where the Python Flask backend serves RESTful API endpoints and the JavaScript frontend handles user interactions. The backend manages data persistence through a JSON file, while the frontend provides a dynamic, responsive interface using modern web technologies.
+
+Users can immediately begin organizing tasks into columns, with visual feedback provided for all actions. The drag-and-drop functionality is powered by Sortable.js, ensuring smooth and intuitive task management. The application automatically handles data synchronization between the frontend and backend, providing a seamless user experience.
+
+# Features
+
 ## Technical Stack
 
 This project is built using a modern web development stack:
@@ -25,7 +33,7 @@ This project is built using a modern web development stack:
 - **Persistent Data**: All changes are saved even if the program is closed
 
 ## Prerequisites
-Before running the application, ensure you have the following installed:
+Before running the application, make sure to have the following installed:
 - Python 3.7 or higher
 - Flask framework (`pip install flask`)
 
@@ -38,9 +46,3 @@ The application follows a standard Flask project structure with separate directo
 - HTML templates for page rendering
 - CSS styles for visual presentation
 - JSON-based data storage system
-
-## How It Works
-
-The application uses a client-server architecture where the Python Flask backend serves RESTful API endpoints and the JavaScript frontend handles user interactions. The backend manages data persistence through a JSON file, while the frontend provides a dynamic, responsive interface using modern web technologies.
-
-Users can immediately begin organizing tasks into columns, with visual feedback provided for all actions. The drag-and-drop functionality is powered by Sortable.js, ensuring smooth and intuitive task management. The application automatically handles data synchronization between the frontend and backend, providing a seamless user experience.
