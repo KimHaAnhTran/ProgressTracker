@@ -8,6 +8,16 @@
                     "id": 103,
                     "text": "Send this to Anton",
                     "status": "active"
+                },
+                {
+                    "id": 106,
+                    "text": "Everything else",
+                    "status": "active"
+                },
+                {
+                    "id": 107,
+                    "text": "Sanitize the code so it doesn't contain swear words or high school-written documentation",
+                    "status": "active"
                 }
             ]
         },
