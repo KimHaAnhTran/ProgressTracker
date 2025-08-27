@@ -3,7 +3,8 @@
 A full-stack Kanban board application for task management and progress tracking, developed by Kim Ha Anh Tran and Anton Yang from the Montgomery Academy (2025-2026).
 
 ## Overview
-![kanban](https://media.discordapp.net/attachments/1006429731144609832/1410373009688232158/2025-08-27_16-11-00_online-video-cutter.com_3.gif?ex=68b0c7b8&is=68af7638&hm=bcc5ec6c17b23944c44c4fd002c615c6981ffcbfebc4922f107500c128a7f605&=&width=1809&height=720) <br>
+![kanban](https://media.discordapp.net/attachments/1006429731144609832/1410373009688232158/2025-08-27_16-11-00_online-video-cutter.com_3.gif?ex=68b0c7b8&is=68af7638&hm=bcc5ec6c17b23944c44c4fd002c615c6981ffcbfebc4922f107500c128a7f605&=&width=1809&height=720) 
+<br>
 **Progress Tracker** is a web-based Kanban-style task management system that allows users to organize their work into customizable columns. Users can create tasks, drag and drop them between columns to track progress, and visually distinguish completed tasks. The application features a clean, intuitive interface with real-time updates and persistent data storage.
 
 ## How It Works
