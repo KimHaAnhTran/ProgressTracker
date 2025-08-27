@@ -38,9 +38,6 @@ create_column() / delete_column():
 Operates on board_data['columns'] array
 
 BASICALLY: Every backend function loads JSON --> changes it --> saves JSON --> returns result
-
-I know I'm repeating myself a lot (there's gonna be a whole documentation below for each function)
-But like, I'm dumb, ok. And future me might forget python entirely cause I'm eloping with C#, so uhm, yeah
 """
 
 

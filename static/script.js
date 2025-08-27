@@ -1,5 +1,4 @@
 // Oh boy, relearning javascript is 10x more. Can't wait!
-// You'll see me babbling to myself like an idiot. I try my best 
 let boardData = {};
 
 // DOM Elements

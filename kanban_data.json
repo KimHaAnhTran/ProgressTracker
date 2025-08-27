@@ -10,13 +10,8 @@
                     "status": "active"
                 },
                 {
-                    "id": 107,
-                    "text": "Rewrite documentation",
-                    "status": "active"
-                },
-                {
                     "id": 108,
-                    "text": "Fix the href of the welcome.html",
+                    "text": "Fix the href of the welcome.html so that python directs to welcome page instead of this one",
                     "status": "active"
                 }
             ]
@@ -37,8 +32,8 @@
             "title": "Done",
             "tasks": [
                 {
-                    "id": 104,
-                    "text": "Staying up late",
+                    "id": 107,
+                    "text": "Rewrite documentation",
                     "status": "done"
                 }
             ]
