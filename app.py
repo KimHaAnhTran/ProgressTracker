@@ -4,6 +4,46 @@ import os
 
 app = Flask(__name__)
 
+"""
+JSON Structure
+
+board_data -->  dictionary
+columns -->  array of column dictionaries
+each column has id, title, tasks
+each task has id, text, status
+
+# Every time the frontend calls one of these, the backend:
+# Loads the JSON file with load_data()
+# Modifies it (add/delete/update task or column)
+# Saves it back with save_data()
+# Returns a response to the frontend
+
+
+PYTHON STUFF 
+
+create_task():
+Finds column_id from request
+Looks through board_data['columns'] for the right column
+Appends task to column['tasks']
+
+move_task():
+Loops through all columns -->  all tasks to find the task
+Removes it from old column
+Appends it to new column
+Updates task['status'] depending on column
+
+update_task() & delete_task():
+Same loop-through-columns approach
+create_column() / delete_column():
+Operates on board_data['columns'] array
+
+BASICALLY: Every backend function loads JSON --> changes it --> saves JSON --> returns result
+
+I know I'm repeating myself a lot (there's gonna be a whole documentation below for each function)
+But like, I'm dumb, ok. And future me might forget python entirely cause I'm eloping with C#, so uhm, yeah
+"""
+
+
 # File to save our data
 DATA_FILE = "kanban_data.json"
 

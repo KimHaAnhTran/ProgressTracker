@@ -11,6 +11,16 @@ const boardElement = document.getElementById('board'); // Finds the main contain
 const columnTemplate = document.getElementById('column-template'); // Finds the hidden template for columns
 const taskTemplate = document.getElementById('task-template'); // Finds the hidden template for tasks
 
+
+/**The main JS functions for this
+
+loadBoardData() --> GET /api/board
+createTask(columnId, text) --> POST /api/task
+updateTask(taskId, newText) --> PUT /api/task/<id>
+deleteTask(taskId) --> DELETE /api/task/<id>
+moveTask(taskId, newColumnId) --> POST /api/task/<id>/move
+createColumn(title) --> POST /api/column
+deleteColumn(columnId) --> DELETE /api/column/<id> */
 // Initialize the application
 // 'async' = function can pause and wait for other operations to complete
 // Like Unity's coroutine that yield return new WaitForSeconds()
@@ -96,6 +106,10 @@ function renderBoard() {
         
         // This is where the drag-and-drop magic happens!
         // Sortable.js is a library that makes elements draggable
+        /** Dragging a task in the UI triggers onEnd 
+         * --> JS calculates taskId & newColumnId
+         * --> Calls backend → backend updates JSON 
+         * --> JS updates DOM CSS (done class). */
         new Sortable(tasksContainer, {
             group: 'tasks', // Allows dragging between all Sortable instances with same group
             animation: 150, // Animation duration in milliseconds

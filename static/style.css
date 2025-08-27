@@ -139,6 +139,7 @@ header h1 {
     transform: translateY(-2px);
 }
 
+/*Status in JSON --> JS reads it --> adds/removes .done class --> cross strikes through "Done" text*/
 .task.done {
     opacity: 0.7;
     text-decoration: line-through;
