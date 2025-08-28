@@ -16,23 +16,13 @@
             "title": "Doing",
             "tasks": [
                 {
-                    "id": 110,
-                    "text": "Task 3",
+                    "id": 106,
+                    "text": "Chilling",
                     "status": "active"
                 },
                 {
                     "id": 108,
                     "text": "Edit task",
-                    "status": "active"
-                },
-                {
-                    "id": 111,
-                    "text": "Column",
-                    "status": "active"
-                },
-                {
-                    "id": 106,
-                    "text": "Chilling",
                     "status": "active"
                 }
             ]
@@ -40,6 +30,17 @@
         {
             "id": 3,
             "title": "Done",
+            "tasks": [
+                {
+                    "id": 111,
+                    "text": "Column",
+                    "status": "done"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "title": "New colum",
             "tasks": []
         }
     ]
