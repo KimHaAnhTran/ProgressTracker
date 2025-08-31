@@ -4,7 +4,7 @@ A full-stack Kanban board application for task management and progress tracking,
 
 ## Overview
 ![2025-08-27 16-11-00 (online-video-cutter com) (3)](https://github.com/user-attachments/assets/64e53faa-051c-420c-b12e-0acc61224b08)
-<br>
+<br><br>
 **Progress Tracker** is a web-based Kanban-style task management system that allows users to organize their work into customizable columns. Users can create tasks, drag and drop them between columns to track progress, and visually distinguish completed tasks. The application features a clean, intuitive interface with real-time updates and persistent data storage.
 
 ## How It Works
