@@ -1,6 +1,6 @@
 # Progress Tracker
 
-A full-stack Kanban board application for task management and progress tracking.
+A full-stack Kanban board application for task management and progress tracking. <br>
 Developed by [**Kim Ha Anh Tran**](https://github.com/KimHaAnhTran) and [**Anton Yang**](https://github.com/antonyang1649) from the Montgomery Academy (2025-2026).
 
 ## Overview
