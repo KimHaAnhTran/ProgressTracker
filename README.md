@@ -1,6 +1,6 @@
 # Progress Tracker
 
-A full-stack Kanban board application for task management and progress tracking, developed by Kim Ha Anh Tran and Anton Yang from the Montgomery Academy (2025-2026).
+A full-stack Kanban board application for task management and progress tracking, developed by [**Kim Ha Anh Tran**](https://github.com/KimHaAnhTran) and [**Anton Yang**](https://github.com/antonyang1649) from the Montgomery Academy (2025-2026).
 
 ## Overview
 ![2025-08-27 16-11-00 (online-video-cutter com) (3)](https://github.com/user-attachments/assets/64e53faa-051c-420c-b12e-0acc61224b08)
